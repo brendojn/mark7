@@ -15,14 +15,14 @@ if @browser.eql?('headless')
 
   Capybara.configure do |config|
   config.default_driver = :selenium_chrome_headless
-  config.app_host = 'https://mark7.herokuapp.com'
+  config.app_host = 'https://mark7-sandbox.herokuapp.com'
 
   Capybara.default_max_wait_time = 5
   end
 else
   Capybara.configure do |config|
   config.default_driver = :selenium_chrome
-  config.app_host = 'https://mark7.herokuapp.com'
+  config.app_host = 'https://mark7-sandbox.herokuapp.com'
 
   Capybara.default_max_wait_time = 5
   end

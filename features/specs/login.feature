@@ -16,8 +16,9 @@ Funcionalidade: Login
 
         Quando faço login com "brendo@bol.com" e "123456"
         Então sou autenticado com sucesso
-        E sou redirecionado para o painel de tarefas com a mensagem "Hello, Brendo Oliveira"
-    
+        E sou redirecionado para o painel de tarefas com a mensagem "Olá, Brendo Oliveira"
+
+    @login
     Esquema do Cenário: Tentativa de logar
 
         Quando faço login com "<email>" e "<senha>"
@@ -25,8 +26,8 @@ Funcionalidade: Login
 
         Exemplos: 
         | email                     | senha   | saida                       |
-        | eu@papito.io              | xpto123 | Incorrect password          |
-        | padre.kevedo@noekzite.org | xpto123 | User not found              |
-        | fernando&qaninja.io       | xpto123 | Email is required           |
-        |                           | xpto123 | Email is required           |
-        | eu@papito.io              |         | Password is required        |
+        | eu@papito.io              | xpto123 | Senha inválida.             |
+        | padre.kevedo@noekzite.org | xpto123 | Usuário não cadastrado.     |
+        | fernando&qaninja.io       | xpto123 | Email incorreto ou ausente. |
+        |                           | xpto123 | Email incorreto ou ausente. |
+        | eu@papito.io              |         | Senha ausente. |

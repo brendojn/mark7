@@ -1,0 +1,6 @@
+log/*.html
+log/*.log
+log/*.json
+log/screenshots
+.idea/*
+vendor/

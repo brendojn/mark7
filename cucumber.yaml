@@ -5,4 +5,4 @@ bdd: --format pretty
 dot: --format progress
 html: --format html --out=log/features.html
 json: --format json --out=log/features.json
-headless: BROWSER=
+headless: BROWSER=headless
